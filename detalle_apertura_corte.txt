@@ -1,0 +1,4 @@
+
+Para el admin corte:
+1- validar si no hay apertura por el usuario, si  no hay ver si hay cajas
+disponibles para que pueda hacer apertura.

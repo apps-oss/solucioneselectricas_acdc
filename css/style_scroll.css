@@ -1,0 +1,147 @@
+table {
+  width:100%;
+}
+
+th, td { padding: 8px 16px; }
+.headd    { background:#e3f2fd; 
+  height: 40px;
+  padding-top: 8px; padding-bottom:  16px;
+  color:#263238; 
+  display: block;}
+  /* Treat all as divs */
+.headd > thead,
+.headd > thead > tr,
+.headd > thead > tr > th {
+  display: block;
+}
+
+tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+
+.scrolled {
+  height: 320px;
+  overflow-y: auto;
+  display: block;
+}
+.scrolled > tbody > tr,
+.scrolled  > tbody > tr > td {
+  display: block;
+}
+
+.c10{
+  width: 10%;
+}
+.c20{
+  width: 20%;
+}
+.c30{
+  width: 30%;
+}
+.c40{
+  width: 40%;
+}
+.c50{
+  width: 50%;
+}
+.c60{
+  width: 60%;
+}
+.c70{
+  width: 70%;
+}
+.c80{
+  width: 80%;
+}
+.c90{
+  width: 90%;
+}
+.c100{
+  width: 100%;
+}
+
+/*buttons with effects*/
+
+
+.multi-button {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 14px;
+  padding: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    place-items: center;
+}
+
+.invoic {
+  background-color: rgb(85,131,241);
+  border: 1px solid rgb(85,131,241);
+
+}
+
+
+.prn {
+  background-color: rgb(39,166,75);
+  border: 1px solid rgb(39,166,75);
+
+}
+
+.clos{
+  background-color: #d9534f ;
+  border: 1px solid #d9534f ;
+
+}
+
+
+.buttons {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
+  padding: 10px 17px 10px 17px;
+    font: 15px Arial;
+  color: white;
+  border-radius: 7px;
+}
+
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttons span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 20px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.prn span:after {
+  font-family: FontAwesome;
+  content: "\f02f";
+}
+
+.invoic span:after {
+  font-family: FontAwesome;
+  content: "\f571";
+}
+
+.clos span:after {
+  font-family: FontAwesome;
+  content: "\f00d";
+}

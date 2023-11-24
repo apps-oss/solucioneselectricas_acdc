@@ -1,0 +1,35 @@
+
+.sweet-alert i
+{
+  color:#FF0000;
+}
+.swstyle
+{
+  font-size: 27px;
+  color:#FF0000;
+  font-weight: bolder;
+}
+.inf
+{
+  color: gray;
+}
+
+span.select2-container--open {
+z-index: 9999 !important;
+}
+
+#inventable tr td
+{
+font-size: 12px;
+}
+
+#inventable input
+{
+height: 28px;
+font-size: 12px;
+margin: 0px;
+}
+.Delete>input,a
+{
+height: 28px;
+}
