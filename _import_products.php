@@ -49,7 +49,7 @@ for ($indiceHoja = 0; $indiceHoja < $totalDeHojas; $indiceHoja++) {
         $precio       = trim($sheet->getCellByColumnAndRow(9, $row->getRowIndex()+1));
         $stock        = trim($sheet->getCellByColumnAndRow(10, $row->getRowIndex()+1));
         $decimal      = trim($sheet->getCellByColumnAndRow(11, $row->getRowIndex()+1));
-        $fragil      = trim($sheet->getCellByColumnAndRow(12, $row->getRowIndex()+1));
+        //$fragil      = trim($sheet->getCellByColumnAndRow(12, $row->getRowIndex()+1));
         $id_presentacion=0;
         $id_categoria=getCategoriaByDesc($categoria);
         $id_marca=0;
@@ -76,7 +76,7 @@ for ($indiceHoja = 0; $indiceHoja < $totalDeHojas; $indiceHoja++) {
             'costo' => $costo,
             'composicion'   => "_",
             'exclusivo_pedido'=>0,
-            'fragil'      => $fragil,
+            //'fragil'      => $fragil,
         );
         if ($barcode!="") {
             echo "PRODUCTO:".$n."-". $barcode."-". $descripcion."-".$descpre."<br>";
@@ -159,7 +159,7 @@ function verificarCat()
                 'nombre_cat' => $cat,
                 'descripcion' => $cat,
                 'tienda' => 1,
-                'pesable' => 0,
+                //'pesable' => 0,
                 );
                 $insert = _insert($t, $f);
                 if ($insert) {

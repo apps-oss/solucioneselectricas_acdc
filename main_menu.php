@@ -23,9 +23,9 @@ $logo=$row_sucursal["logo"];
 <nav class="navbar-default navbar-static-side" role="navigation">
   <div class="sidebar-collapse">
     <ul class="nav" id="side-menu">
-      <li class="nav-header" style="background: #fff;">
+      <li class="nav-header" style="background: #000000;">
         <div class="dropdown profile-element"> <span>
-          <img alt="image" class="img-responsive" src="<?=$logo?>" width="180px" style="margin-left: -3%;">
+          <img alt="image" class="img-responsive" src="<?=$logo?>" width="180px" style="margin-left:-3%; margin-bottom: -3%; margin-top: -3%;">
         </span>
       </div>
       <div class="logo-element">

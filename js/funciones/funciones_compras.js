@@ -617,7 +617,7 @@ function senddata()
              display_notify(datax.typeinfo, datax.msg);
              if(datax.typeinfo == "Success")
              {
-               //setInterval("reload1();", 1000);
+               setTimeout("reload1();", 1000);
              }
            }
          });

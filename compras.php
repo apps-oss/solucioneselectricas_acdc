@@ -406,7 +406,7 @@ function initial()
             <?php
             include_once("footer.php");
             $a=rand(1, 99999);
-            echo "<script src='js/funciones/funciones_compras.js?t$a=$a'></script>";
+            echo "<script src='js/funciones/funciones_compras.js?t=$a'></script>";
 
             echo "<script src='js/plugins/arrowtable/arrow-table.js'></script>";
             echo "<script src='js/plugins/bootstrap-checkbox/bootstrap-checkbox.js'></script>";
